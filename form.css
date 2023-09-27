@@ -1,0 +1,926 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100;
+}
+form{
+    width: 96%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-efeito-de-zoom-gradiente_23-2149735606.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+form fieldset{
+    padding: 20px 20px;
+    border: 3px dashed rgb(0, 0, 0);
+}
+form  legend{
+    font-family: tahoma;
+    color: rgb(255, 29, 29);
+    font-size: 40px;
+    text-align: left;
+}
+form input[type=text]{
+
+    display: inline-block;
+    margin-top: 30px;font-family: tahoma;
+    width: 80%;
+    padding: 10px 30px;
+    border: 1px solid red;
+}
+form input[type=text]:focus, form select:focus, form textarea:focus{
+   background-color: rgb(255, 100, 100);
+   border: 1px solid red;
+   outline:0;
+
+}
+form select{
+    font-family: tahoma;
+    width:calc(80% + 60px);
+    margin-top: 30px;
+    padding: 10px 30px;
+    display: inline-block;
+    border: 1px solid red;
+    color: rgb(0, 0, 0);
+}
+form select option:nth-of-type(2){
+    color: blue;
+}
+form 
+
+select option[disabled]{
+    color: rgb(0, 0, 0);
+}
+form h2{
+    font-family: tahoma;
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+}
+form .input-radio{
+    font-family: tahoma;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 20px;
+    text-align: left;   
+
+}
+.input-radio span{
+    margin-left: 15px;
+    padding-top:100px;
+
+}
+.comida-favorita{
+    margin-top: 20px;
+    color:rgb(14, 0, 43);
+    display:inline-block;
+    font-size:20px;
+    text-align: left;
+
+}
+form input[type=submit]{
+    font-family: tahoma;
+    margin-top: 25px;
+    border:0;
+    border: 3px dotted rgb(255, 138, 138);
+    background-color: rgb(245, 85, 40);
+    width: 100px;
+    height: 35px;
+    font-size: 17px;
+    cursor:crosshair;
+}
+form textarea{
+    font-family: tahoma;
+    margin-top: 30px;
+    width: 80%;
+    padding: 10px 30px;
+    resize: none;
+    border: 1px solid red;
+    height: 100px;
+    padding: 10px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.parent div:first-child div.item{
+    background-color: yellow;
+}
+.parent p:first-of-type{
+    font-size: 90px;
+    color: yellow;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* estamos dizendo  que a cada tres itens apique o elemento aguardado
+.parent div:nth-of-type(3n + 1) div.item{
+    background-color: blue;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.box{
+    width: 100%;
+}
+.box div{
+    float:left;
+    width: 33.3%;
+    height: 400px;
+    background-color: green;
+    border: 1px solid black;
+}
+
+.box div:last-of-type  p{
+   background-color: red;
+   font-size: 40px;
+   color: pink;
+}
+p:empty{
+    background-color: blue;
+    height: 150px;
+    width: 190px;
+}
+p.p::before{
+    content: 'nao desista voce ira chg=egar em um lugar melhor voce tem que acreditar em vc e nao deixar se abalar por ter uma pequena recaida ';
+    background-color: green;
+    margin-left: 100px;
+    font-size: 30px;
+}
+/* negacao ataca todas as divs menos a destacada
+.box > div:not(.three){
+    background-color: orange;
+}
+
+
+
+
+/*
+.box div:last-of-type{
+    background-color:pink;
+}
+.box p:last-of-type{
+    color: yellow;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ul{
+    list-style-position: inside;
+
+}
+
+
+
+
+/*de acordo com a posicao que esta
+ul li:nth-of-type(2){
+    color: red;
+}
+/*de acordo com os filhos
+ul li:nth-child(5){
+    color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.teste:focus{
+    background-color: green;
+    margin-top:50px;
+}
+.textarea1:focus{
+    display: block;
+    background-color:black;
+    margin-top:60px;
+
+}
+.link1:visited{
+    color:rgb(255, 0, 43);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.teste, .teste1, .teste2{
+    width: 400px;
+    height: 400px;
+    background-color: hsl(229, 64%, 45%);
+    margin-top: 30px;
+    display: inline-block;
+    margin-left: 30px;
+}
+.teste1{
+    background-color: yellow;
+}
+.teste2:active{
+    background-color: red;
+}
+.teste:hover{
+    background-color:blueviolet;
+    height: 900px;
+}
+.teste:hover ,.teste1,.teste2{
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.box{
+    width: 100%;
+    margin: 90px auto;
+    text-align:center;
+    background-color: pink; 
+
+}
+.item{
+    display: inline-block;
+    width: 100%;
+    margin-right: -4px;
+    
+    
+
+}
+.box > .item > img{
+    width: 40%;
+
+}
+.last{
+    margin-right: 0;
+}
+
+.item p{
+
+    text-align: center;
+    display: inline-block;
+    background-color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.bg{
+   width: 100%; 
+   margin: 0 auto;
+   height: 30vw;
+  /* background-size: 100%;
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-image:url('https://i0.wp.com/metagalaxia.com.br/wp-content/uploads/2023/03/Naruto.webp?fit=1200%2C675&ssl=1');
+   /*background-repeat: no-repeat;
+   background-position: center;
+   background-color: green;
+   background-size: cover;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.bg{
+    width: 50%;
+    height:50%;
+    margin: 0 auto;
+
+    backgrounds*
+    background-image: url(https://virtualpiano.net/wp-content/uploads/2020/10/Samidare-Naruto-Shippuden-Yasuharu-Takanashi-Best-Online-Piano-Keyboard-Virtual-Piano.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: red;
+    background-position: 50%;
+
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.menu-fixed{
+    position: relative;
+    left: 30px;
+    top: 40px;
+    height: 300px;
+    width: 400px;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: rgb(170, 0, 0);
+}
+.box{
+    height: 400px;
+    width: 500px;
+    background-color: green;
+}
+.box p{
+    width: 300px;
+}
+
+
+
+
+
+
+/*
+
+
+
+table{
+    width: 900px;
+    height: 200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+table tr td{
+    border: 4px dotted black;
+    vertical-align: middle;
+    background-color: rgb(255, 120, 120);
+}
+*/
